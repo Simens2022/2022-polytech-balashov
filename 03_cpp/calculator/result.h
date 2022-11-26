@@ -1,0 +1,1 @@
+void result(float a, char c, float b);
