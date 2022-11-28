@@ -1,6 +1,6 @@
 # Quote
 If you think you're fast, there's always someone faster.
-### Sortong algorithms comparison
+### Sorting algorithms comparison
 
 |              | Quicksort     | Selection sort                     |
 | ------------ | ------------- | ---------------------------------- |
