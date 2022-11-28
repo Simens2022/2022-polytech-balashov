@@ -1,5 +1,5 @@
 # Quote
-If you think you're fast, there's always someone faster.
+    If you think you're fast, there's always someone faster.
 # Sorting algorithms comparison
 
 |              | Quicksort     | Selection sort                     |
@@ -9,4 +9,4 @@ If you think you're fast, there's always someone faster.
 | Average-case | $O(n\log{n})$ | $O(n^2)$ comparisons, $O(n)$ swaps |
 
 # MIT License
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+    A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
