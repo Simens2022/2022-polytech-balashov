@@ -14,7 +14,7 @@ struct Person {
 };
 
 
-struct Student : Person {
+struct Student : virtual public Person {
     Student() {
         std::cout << "Student::ctor" << std::endl;
         score = 2.0;
@@ -26,7 +26,7 @@ struct Student : Person {
 };
 
 
-struct Teacher : Person {
+struct Teacher : virtual public Person {
     Teacher() { std::cout << "Teacher::ctor" << std::endl; }
 
     ~Teacher() { std::cout << "Teacher::dtor" << std::endl; }
@@ -48,12 +48,12 @@ int main() {
     ta.score = 5.0;
     res = ta.score;
     std::cout << res << std::endl;
-    //std::string name{};
-    //name = ta.name;
-    //std::cout << name << std::endl;
-    //ta.name = "Da Sha";
-    //name = ta.name;
-    //std::cout << name << std::endl;
+    std::string name{};
+    name = ta.name;
+    std::cout << name << std::endl;
+    ta.name = "Da Sha";
+    name = ta.name;
+    std::cout << name << std::endl;
 
     return 0;
 }
