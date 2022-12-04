@@ -56,7 +56,7 @@ struct Printer : IVisitable {
 
 
 struct Perimeter : IVisitable {
-    void accept(Rectangle& r) final { cout << r.x + r.y << endl; }
+    void accept(Rectangle& r) final { cout << r.x + r.y + r.x + r.y << endl; }
     void accept(Circle& c) final { cout << c.r * 2 * 3.14 << endl; }
     void accept(Triangle& t) final { cout << t.x + t.y + t.z << endl; }
 };
@@ -65,7 +65,9 @@ struct Perimeter : IVisitable {
 struct Square : IVisitable {
     void accept(Rectangle& r) final { cout << r.x * r.y << endl; }
     void accept(Circle& c) final { cout << c.r * c.r * 3.14 << endl; }
-    void accept(Triangle& t) final { cout << 0.5 * t.x * t.y * sin(t.z) << endl; }
+    void accept(Triangle& t) final { cout << sqrt(0.5 * (t.x + t.y + t.z) * (0.5 * (t.x + t.y + t.z) -
+            t.x) * (0.5 * (t.x + t.y + t.z) - t.y) * (0.5 * (t.x + t.y + t.z) - t.z)) << endl;
+    }
 };
 
 
